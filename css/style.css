@@ -1,0 +1,540 @@
+/* All Common CSS Start */
+* {
+    margin: 0;
+    padding: 0;
+    /* For Bootstrap, we need to make outline = 0, because by default it gets some outline */
+    outline: 0;
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+}
+
+/* For Bootstrap a:hover gets text-decoration, by default, so we need to make it "none" */
+a,
+a:hover {
+    text-decoration: none;
+    display: inline-block;
+}
+
+ul,
+ol {
+    list-style-type: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+    padding: 0;
+    line-height: 0.8;
+}
+
+.sectionHead h3 {
+    color: #002147;
+    font-size: 40px;
+    font-weight: 700;
+    padding-bottom: 20px;
+}
+
+.sectionHead p {
+    color: #808080;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 36px;
+    padding-bottom: 60px;
+}
+
+/* All Common CSS End */
+
+/* Header Part Start */
+.navbar {
+    margin-top: 10px;
+}
+
+.nav-link {
+    /* oxford blue */
+    color: #002147;
+    font-size: 20px;
+    font-weight: 500;
+    margin-left: 72px;
+}
+
+.loginBtn,
+.signUpBtn {
+    color: #002147;
+    font-size: 20px;
+    font-weight: 500;
+    background: #fff;
+    border-radius: 28px;
+    padding: 15px 20px;
+    transition: .4s;
+}
+
+.loginBtn {
+    margin-right: 40px;
+}
+
+.loginBtn:hover,
+.signUpBtn:hover {
+    color: #fff;
+    background: #20B2AA;
+}
+
+/* Header Part End */
+
+/* Banner Part Start */
+#bannerPart {
+    padding-top: 45px;
+}
+
+.bannerBg {
+    background: url(../images/bannerBg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 32px;
+
+    position: relative;
+}
+
+.bannerOverlay {
+    padding-top: 115px;
+    padding-bottom: 145px;
+    background: rgba(0, 0, 0, 0.22);
+    border-radius: 32px;
+}
+
+.bannerHead {
+    padding-bottom: 60px;
+}
+
+.bannerHead h3 {
+    font-size: 21px;
+    font-weight: 300;
+}
+
+.bannerHead h1 {
+    font-size: 97px;
+    font-weight: 700;
+    padding-top: 50px;
+}
+
+.bannerContentLeft h3 {
+    font-size: 21px;
+    font-weight: 300;
+}
+
+.bannerContentRight {
+    display: flex;
+    gap: 10px;
+    margin-left: 80px;
+}
+
+.bannerRightText h3 {
+    font-size: 21px;
+    font-weight: 300;
+    padding-right: 40px;
+    line-height: 27px;
+}
+
+.bannerRightText a {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.searchBar {
+    display: flex;
+    gap: 110px;
+    background: #fff;
+    position: absolute;
+    top: 85%;
+    padding: 30px 70px;
+    border-radius: 16px;
+
+    -webkit-box-shadow: 0px 3px 13px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 3px 13px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 3px 13px 0px rgba(0, 0, 0, 0.75);
+}
+
+.searchItem {
+    margin-top: 17px;
+}
+
+.searchItem h3 {
+    font-size: 21px;
+    font-weight: 600;
+    text-decoration: 5px underline;
+    text-decoration-color: #f8c165;
+}
+
+.searchTextIcon {
+    display: flex;
+    gap: 25px;
+    margin-top: 10px;
+    align-items: center;
+}
+
+.searchTextIcon p {
+    color: #808080;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.searchItemBar h3 {
+    position: relative;
+}
+
+.searchItemBar h3::before {
+    position: absolute;
+    left: 127%;
+    /* bottom: -20px; */
+    transform: translateX(-50%);
+    height: 50px;
+    width: 1px;
+    background: #808080;
+    content: "";
+}
+
+.searchBtn {
+    padding: 25px;
+    border-radius: 16px;
+    background: #20B2AA;
+    margin-left: 60px;
+}
+
+.searchBtn:hover {
+    padding: 25px;
+    border-radius: 16px;
+    background: #20B2AA;
+}
+
+.searchBtn i {
+    color: #fff;
+    font-size: 20px;
+}
+
+/* Banner Part End */
+
+/* Category Part Start */
+#categoryPart {
+    padding-top: 170px;
+}
+
+.categoryItem {
+    position: relative;
+    padding-top: 110px;
+    padding-bottom: 30px;
+    padding-left: 30px;
+    border-radius: 8px;
+    -webkit-box-shadow: 0px 0px 7px 1px rgba(128, 128, 128, 0.507);
+    -moz-box-shadow: 0px 0px 7px 1px rgba(128, 128, 128, 0.507);
+    box-shadow: 0px 0px 7px 1px rgba(128, 128, 128, 0.507);
+}
+
+.categoryItemText h4 {
+    color: #002147;
+    font-size: 24px;
+    font-weight: 500;
+    padding-top: 28px;
+    padding-bottom: 28px;
+}
+
+.categoryItemText p {
+    color: #808080;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.categoryBadge {
+    background: #faebd7;
+    /* color: #F2BA49; */
+    border-radius: 16px;
+    height: 32px;
+    width: 50px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.categoryBadge span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #f5A623;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+/* Category Part End */
+
+/* Trending Part Start */
+#trendingPart {
+    padding-top: 155px;
+}
+
+.trendingItem {
+    border-radius: 20px;
+    background: #fff;
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+.trendingItemImg img {
+    width: 100%;
+    padding: 10px;
+}
+.trendingContentFlex {
+    display: flex;
+    /* gap: 50px; */
+    margin-left: 30px;
+    margin-top: 30px;
+    margin-right: 30px;
+    align-items: center;
+}
+.trendingText1 h3 {
+    /* Oxford blue */
+    color: #002147;
+    font-size: 24px;
+    font-weight: 600;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+.trendingText1 h4 {
+    /* cadet grey is #91a3b0 */
+    color: #91a3b0;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.trendingText2 h4 {
+    /* slate gray is #708090*/
+    color: #708090;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.trendingText2 h3 {
+    /* Oxford blue */
+    color: #002147;
+    font-size: 32px;
+    font-weight: 600;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.trendingRating {
+    margin-left: 80px;
+    margin-top: 10px;
+    text-align: right;
+}
+.trendingRating i {
+    color: #F9BD2C;
+    font-size: 14px;
+}
+
+.trendingText3 {
+    margin-top: 5px;
+    margin-left: 5px;
+}
+.trendingDurationIcon i{
+    /* light sea green is #20b2aa */
+    color: #20b2aa;
+    font-size: 14px;
+}
+.trendingText3 h4{
+    /* slate gray is #708090*/
+    color: #708090;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.trendingRating h4 {
+    /* slate gray is #708090*/
+    color: #708090;
+    font-size: 14px;
+    font-weight: 500;
+    padding-top: 10px;
+}
+.trendingRightIcon i{
+    /* light sea green is #20b2aa */
+    color: #20b2aa;
+    font-size: 14px;
+}
+.trendingText4 h4{
+    /* slate gray is #708090*/
+    color: #708090;
+    font-size: 16px;
+    font-weight: 500;
+}
+/* Trending Part End */
+
+/* Destination Part Start */
+#destinationPart {
+    padding-top: 155px;
+}
+
+.destinationItem {
+    position: relative;
+    margin-bottom: 22px;
+}
+
+.destinationItem img {
+    width: 100%;
+}
+
+.destinationOverlay {
+    height: 100%;
+    width: 100%;
+    background: rgba(58, 58, 58, 0.5);
+
+    /* position absolute is child div */
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 25px;
+}
+
+.destinationBadge {
+    background: #faebd7;
+    /* color: #F2BA49; */
+    border-radius: 16px;
+    height: 32px;
+    width: 50px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.destinationBadge span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #f5A623;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.destinationContentText {
+    color: #fff;
+    position: absolute;
+    bottom: 30px;
+    left: 35px;
+}
+
+.destinationContentText h3 {
+    font-size: 20px;
+    font-weight: 400;
+    padding-bottom: 10px;
+}
+
+.destinationContentText h4 {
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.destinationImgFlex {
+    display: flex;
+    gap: 20px;
+}
+
+/* Destination Part End */
+
+/* Subscription Part Start */
+#subscriptionPart {
+    padding-top: 125px;
+    position: relative;
+    padding-bottom: 50px;
+}
+
+.subscriptionBg {
+    position: absolute;
+    left: 14%;
+    top: 16%;
+    z-index: -1;
+}
+
+.subscriptionImg img {
+    width: 100%;
+}
+
+.subscriptionRightContent {
+    padding-top: 40px;
+}
+
+.subscriptionRightContent h4 {
+    color: #28b0a6;
+    font-size: 20px;
+    font-weight: 500;
+    padding-bottom: 20px;
+}
+
+.subscriptionRightContent h3 {
+    color: #002147;
+    font-size: 39px;
+    font-weight: 600;
+    line-height: 55px;
+    padding-bottom: 20px;
+    padding-right: 74px;
+}
+
+.subscriptionRightContent p {
+    color: #708090;
+    font-size: 19px;
+    font-weight: 400;
+    padding-bottom: 70px;
+    line-height: 30px;
+    padding-right: 155px;
+}
+
+.subscriptionInput {
+    margin-bottom: 48px;
+
+    -webkit-box-shadow: 0px 0px 17px -1px rgba(128, 128, 128, 1);
+    -moz-box-shadow: 0px 0px 17px -1px rgba(128, 128, 128, 1);
+    box-shadow: 0px 0px 17px -1px rgba(128, 128, 128, 1);
+}
+
+.subscriptionInput input {
+    padding: 20px;
+    width: 75%;
+    border: none;
+    background-image: url(../images/emailIcon.png);
+    background-position: 13px 22px;
+    background-repeat: no-repeat;
+}
+
+.subscriptionInput input::placeholder {
+    color: #708090;
+    font-size: 18px;
+    padding-left: 30px;
+}
+
+.subscriptionInput button {
+    padding: 20px;
+    /* width: 24%; */
+    border: none;
+    background: #28b0a6;
+    color: #fff;
+    font-size: 16px;
+}
+
+.subscriptionBottomText h4 {
+    color: #708090;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+/* Subscription Part End */
+
+/* Banner Part Start */
+/* Banner Part End */
+/* Banner Part Start */
+/* Banner Part End */
